@@ -35,6 +35,7 @@ namespace TechJobsPersistent.Controllers
             List<Employer> employers = context.Employers.ToList();
             List<Skill> skills = context.Skills.ToList();
             AddJobViewModel addJobViewModel = new AddJobViewModel(employers, skills);
+            
             return View(addJobViewModel);
         }
 
